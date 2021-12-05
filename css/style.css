@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Mulish', sans-serif;
+  background-color: #F5FAFE;
 }
 
 .container {
@@ -239,5 +240,30 @@ img {
   .container {
     max-width: 263px;
   }
+}
+
+.breadcrumbs-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  font-size: 15px;
+  line-height: 13px;
+}
+
+.breadcrumbs-list__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumbs-list__item:not(:last-child)::after {
+  content: '/';
+  margin-right: 4px;
 }
 /*# sourceMappingURL=style.css.map */
