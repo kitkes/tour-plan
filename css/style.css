@@ -232,6 +232,10 @@ img {
     -ms-flex-preferred-size: content !important;
         flex-basis: content !important;
   }
+  .hotel-info__text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 @media (max-width: 576px) {
