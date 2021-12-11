@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximum-scale=1"
+    />
     <title>Best Tour-Plan:Hotel Booking</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=2a836d25-be37-4514-827c-ad7f2ddc167f&lang=ru_RU"
+      type="text/javascript"
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -184,6 +192,55 @@
             <!-- ./swiper -->
           </div>
           <!-- /.hotel-slider -->
+          <div class="hotel-person-map">
+            <div class="booking">
+              <div class="booking-price--person">
+                <div class="booking-price">
+                  <span class="booking-price__starts">price starts as</span>
+                  <strong class="booking-price__value">$ 8,500</strong>
+                  <span class="booking-price__per-room">per room / night</span>
+                </div>
+                <!-- /.booking-price -->
+                <div class="booking-person">
+                  <div class="booking-person__amount">
+                    <img
+                      src="img/user.svg"
+                      alt="Icon: user"
+                      class="booking-person__user-icon"
+                    />
+                    <span class="booking-person__guest">2 x Guests</span>
+                  </div>
+                  <div class="booking-person__amount">
+                    <img
+                      src="img/home.svg"
+                      alt="Icon^ home"
+                      class="booking-person__home"
+                    />
+                    <span class="booking-person__room">1 x Room</span>
+                  </div>
+                </div>
+                <!-- /.booking-person -->
+              </div>
+              <!-- /.booking-price--person -->
+              <div class="booking-call">
+                <span class="booking-call__quick">Quick Booking</span>
+                <div class="booking-call__resort">
+                  <img
+                    src="img/phone-call.svg"
+                    alt="Icon: phone"
+                    class="booking-call__phone"
+                  />
+                  <a href="tel:12100" class="booking-call__link">12100</a>
+                </div>
+              </div>
+              <!-- ./booking-call -->
+              <button class="booking-button">View Other Options</button>
+            </div>
+            <!-- /.booking -->
+            <div id="map" class="hotel-map"></div>
+            <!-- ./hotel-map -->
+          </div>
+          <!-- /.hotel-person-map -->
         </div>
         <!-- /.hotel-network -->
       </div>
