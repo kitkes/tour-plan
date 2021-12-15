@@ -807,6 +807,10 @@ img {
   color: #fff;
 }
 
+.reviews {
+  padding: 40px 0 70px 0;
+}
+
 .reviews__title {
   text-align: center;
   font-family: Mulish;
@@ -830,9 +834,32 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 45px;
-  width: 731px;
+  margin: 45px auto 0;
+  width: 730px;
   background-color: #fff;
+  padding: 0 62px 30px;
+}
+
+.reviews-slider__subscribe::before {
+  content: '';
+  position: absolute;
+  top: 118px;
+  right: 62px;
+  width: 70px;
+  height: 47px;
+  background-repeat: no-repeat;
+  background-image: url(../img/quote-right.svg);
+}
+
+.reviews-slider__subscribe::after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  left: 62px;
+  width: 70px;
+  height: 47px;
+  background-repeat: no-repeat;
+  background-image: url(../img/quote-left.svg);
 }
 
 .reviews-slider__subscribe__profile {
@@ -847,9 +874,10 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-top: -45px;
+  margin-bottom: 32px;
 }
 
-.reviews-slider__subscribe__name {
+.reviews-slider__subscribe__profile__name {
   font-family: Mulish;
   font-style: normal;
   font-weight: bold;
@@ -859,7 +887,7 @@ img {
   margin-bottom: 10px;
 }
 
-.reviews-slider__subscribe__date {
+.reviews-slider__subscribe__profile__date {
   font-family: Mulish;
   font-style: normal;
   font-weight: normal;
@@ -868,7 +896,7 @@ img {
   margin-bottom: 4px;
 }
 
-.reviews-slider__subscribe__stars {
+.reviews-slider__subscribe__profile__stars {
   width: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -878,7 +906,7 @@ img {
           justify-content: space-between;
 }
 
-.reviews-slider__subscribe__img {
+.reviews-slider__subscribe__profile__img {
   width: 90px;
   height: 90px;
   -o-object-fit: cover;
@@ -888,12 +916,12 @@ img {
 }
 
 .reviews-slider__subscribe__text {
-  width: 537px;
   font-family: Mulish;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 160%;
+  text-align: justify;
 }
 
 .reviews-slider__button {

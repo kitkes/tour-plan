@@ -1,4 +1,5 @@
 .reviews
+  padding: 40px 0 70px 0
   &__title
     text-align: center
     font-family: Mulish
@@ -14,46 +15,66 @@
       display: flex
       flex-direction: column
       align-items: center
-      margin-top: 45px
-      width: 731px
+      margin: 45px auto 0
+      width: 730px
       background-color: $white
+      padding: 0 62px 30px
+      &::before
+        content: ''
+        position: absolute
+        top: 118px
+        right: 62px
+        width: 70px
+        height: 47px
+        background-repeat: no-repeat
+        background-image: url(../img/quote-right.svg)
+      &::after
+        content: ''
+        position: absolute
+        top: 13px
+        left: 62px
+        width: 70px
+        height: 47px
+        background-repeat: no-repeat
+        background-image: url(../img/quote-left.svg)
       &__profile
-       display: flex
-       flex-direction: column
-       align-items: center
-       margin-top: -45px
-      &__name
-        font-family: Mulish
-        font-style: normal
-        font-weight: bold
-        font-size: 12px
-        line-height: 15px
-        color: #EC1F46
-        margin-bottom: 10px
-      &__date
-        font-family: Mulish
-        font-style: normal
-        font-weight: normal
-        font-size: 10px
-        line-height: 13px
-        margin-bottom: 4px
-      &__stars
-        width: 48px
         display: flex
-        justify-content: space-between
-      &__img
-        width: 90px
-        height: 90px
-        object-fit: cover
-        border-radius: 50%
-        margin-bottom: 9px
+        flex-direction: column
+        align-items: center
+        margin-top: -45px
+        margin-bottom: 32px
+        &__name
+          font-family: Mulish
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 15px
+          color: #EC1F46
+          margin-bottom: 10px
+        &__date
+          font-family: Mulish
+          font-style: normal
+          font-weight: normal
+          font-size: 10px
+          line-height: 13px
+          margin-bottom: 4px
+        &__stars
+          width: 48px
+          display: flex
+          justify-content: space-between
+        &__img
+          width: 90px
+          height: 90px
+          object-fit: cover
+          border-radius: 50%
+          margin-bottom: 9px
       &__text
-        width: 537px
         font-family: Mulish
         font-style: normal
         font-weight: normal
         font-size: 12px
         line-height: 160%
+        text-align: justify
     &__button
       position: absolute
       background-color: transparent
