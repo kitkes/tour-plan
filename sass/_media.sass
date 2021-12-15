@@ -45,9 +45,15 @@
   .hotel-map
     max-width: 340px
     max-height: 210px
+  .newsletter
+    padding-top: 93px
+    padding-bottom: 93px
+    &-wrapper
+      max-width: 700px
+
 
   
-@media (max-width: 768px)
+@media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
@@ -104,6 +110,15 @@
     min-width: 100%
   .hotel-map
     min-width: 100%
+  .newsletter
+    padding: 76px 20px 83px 20px !important
+    &-wrapper
+      align-items: flex-start !important
+      flex-direction: column
+      min-height: 160px
+      max-width: 576px
+
+
 
 @media (max-width: 576px)
   .container
@@ -115,8 +130,17 @@
         max-height: 100%
   .booking
     min-width: 100%
+    &-button
+      padding: 13px 54px
   .hotel-map
     min-width: 100%
+  .newsletter
+    &-wrapper
+      max-width: 280px
+      margin: 0 !important
+      &__new
+        font-size: 30px
+        line-height: 38px
 
 @media (min-width: 320px) and (max-width: 480px)
   .container
@@ -130,12 +154,12 @@
   .booking
     max-width: 100%
     max-height: 210px
+    padding: 29px 22px 26px 22px
+    &-button
+      padding: 13px 54px !important
+      font-size: 12px !important
   .hotel-map
     max-width: 100%
     max-height: 210px
-  .booking
-    &-button
-      padding: 13px 50px
-      font-size: 10px
 
   

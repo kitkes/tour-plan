@@ -15,10 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=2a836d25-be37-4514-827c-ad7f2ddc167f&lang=ru_RU"
-      type="text/javascript"
-    ></script>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -213,7 +209,7 @@
                   <div class="booking-person__amount">
                     <img
                       src="img/home.svg"
-                      alt="Icon^ home"
+                      alt="Icon: home"
                       class="booking-person__home"
                     />
                     <span class="booking-person__room">1 x Room</span>
@@ -245,7 +241,65 @@
         <!-- /.hotel-network -->
       </div>
       <!-- /.container -->
+      <section class="newsletter">
+        <div class="newsletter-wrapper">
+          <div class="newsletter-wrapper__text">
+            <h2 class="newsletter-wrapper__text__title">subscribe to our</h2>
+            <span class="newsletter-wrapper__text__new">Newsletter</span>
+          </div>
+          <!--newsletter-wrapper__text  -->
+          <form action="#" class="newsletter-wrapper__send">
+            <input
+              type="text"
+              class="newsletter-wrapper__send__input"
+              placeholder="Your email address"
+            />
+            <button class="newsletter-wrapper__send__button">Send</button>
+            </button>
+          </form>
+        </div>
+        <!-- ./ newsletter-wrapper -->
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews__title">What people think about us</h2>
+          <div class="swiper reviews-slider">
+            <div class="swiper-wrapper reviews-slider__wrapper">
+              <div class="swiper-slide reviews-slider__subscribe">
+                  <div class="reviews-slider__subscribe__profile">
+                  <img src="img/subscribe-item-1.jpg" alt="Subscribe icon" class="reviews-slider__subscribe__img">
+                  <span class="reviews-slider__subscribe__name">Megan Fox</span>
+                  <span class="reviews-slider__subscribe__date">Stayed 18 Nov, 2019</span>
+                  <div class="reviews-slider__subscribe__stars">
+                    <img src="img/star.svg" alt="star" class="stars" />
+                    <img src="img/star.svg" alt="star" class="stars" />
+                    <img src="img/star.svg" alt="star" class="stars" />
+                    <img src="img/star.svg" alt="star" class="stars" />
+                    <img src="img/star.svg" alt="star" class="stars" />
+                  </div>
+                  </div>
+                  <!-- /.reviews-slider__subscribe__stars -->
+                  <span class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. </span>
+                </div>
+                <!-- ./reviews-slider__subscribe -->
+              </div>
+              <!-- /.swiper-wrapper -->
+              
+            <!-- If we need navigation buttons -->
+            <button class="reviews-slider__button reviews-slider__button__prev"></button>
+            <button class="reviews-slider__button reviews-slider__button__next"></button>
+            </div>
+            <!-- ./reviews-slider -->
+          </div>
+          <!-- /.container  -->
+      </section>
+      <!-- /.rewies -->
     </section>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=2a836d25-be37-4514-827c-ad7f2ddc167f&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

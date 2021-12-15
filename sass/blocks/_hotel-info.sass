@@ -10,7 +10,9 @@
     align-items: center
     flex-wrap: wrap
   &__stars
+    display: flex
     flex-basis: 100%
+
   &__name
     font-size: 24px
     line-height: 30px
@@ -46,9 +48,12 @@
     &__stock
       font-size: 14px
       line-height: 18px
+.stars
+  margin-right: 2px
 .hotel-network
   display: flex
   justify-content: space-between
+  margin-bottom: 68px
 .hotel-slider
   width: 728px
   height: 450px
@@ -75,7 +80,7 @@
     height: 30px
     top: 50%
     transform: translateY(-50%)
-    z-index: 99
+    z-index: 15 
     cursor: pointer
     border: none
     &__next
