@@ -782,6 +782,7 @@ img {
   width: 255px;
   height: 255px;
   overflow: hidden;
+  border-radius: 6px;
 }
 
 .game::before {
@@ -897,9 +898,6 @@ img {
     width: 340px;
     height: 255px;
     margin-bottom: 20px;
-  }
-  .game:nth-child(4) {
-    margin-bottom: 0;
   }
 }
 
