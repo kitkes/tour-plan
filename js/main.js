@@ -41,3 +41,5 @@ function init() {
   // Добавление метки на карту
   myMap.geoObjects.add(myPlacemark);
 }
+
+$(".newsletter").parallax({ imageSrc: "../img/newsletter.jpg" });

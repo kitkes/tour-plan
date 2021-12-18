@@ -457,7 +457,6 @@ img {
 
 .newsletter {
   padding: 100px 0 80px 0;
-  background-image: url("../img/newsletter.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -678,6 +677,7 @@ img {
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
+  max-width: 537px;
 }
 
 .reviews-slider__button {
@@ -736,6 +736,11 @@ img {
 }
 
 .activities-action__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
