@@ -593,6 +593,8 @@ img {
   background-color: #fff;
   padding: 0 62px 30px;
   border-radius: 8px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .reviews-slider__subscribe::before {
@@ -678,6 +680,8 @@ img {
   line-height: 160%;
   text-align: justify;
   max-width: 537px;
+  max-height: 150px;
+  overflow-y: scroll;
 }
 
 .reviews-slider__button {
@@ -759,8 +763,12 @@ img {
   line-height: 20px;
   color: #fff;
   text-align: left;
-  margin-bottom: 1px;
   max-width: 200px;
+  max-height: 150px;
+  margin-bottom: 1px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow-y: scroll;
 }
 
 .activities-action__button {
