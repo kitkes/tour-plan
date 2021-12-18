@@ -687,6 +687,11 @@ img {
   scrollbar-width: none;
 }
 
+.reviews-slider__subscribe__text::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 .reviews-slider__button {
   position: absolute;
   background-color: transparent;
@@ -775,6 +780,11 @@ img {
   overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.activities-action__text::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .activities-action__button {
