@@ -682,6 +682,9 @@ img {
   max-width: 537px;
   max-height: 150px;
   overflow-y: scroll;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .reviews-slider__button {
@@ -769,6 +772,9 @@ img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   overflow-y: scroll;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .activities-action__button {

@@ -42,4 +42,4 @@ function init() {
   myMap.geoObjects.add(myPlacemark);
 }
 
-$(".newsletter").parallax({ imageSrc: "../img/newsletter.jpg" });
+$(".newsletter").parallax({ imageSrc: "img/newsletter.jpg" });
