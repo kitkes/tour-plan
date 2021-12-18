@@ -825,6 +825,779 @@ img {
   z-index: 0;
 }
 
+.other-packages-title {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.packages {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 500px 500px;
+  -ms-grid-columns: 350px 350px 350px;
+      grid-template: 500px 500px / 350px 350px 350px;
+  gap: 30px;
+  margin-bottom: 70px;
+}
+
+.packages-cards {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.packages-cards__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.packages-cards__img {
+  width: 366px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.packages-cards__info {
+  padding: 46px 21px 30px 43px;
+  width: 364px;
+  background-color: #0A223D;
+  color: #fff;
+}
+
+.packages-cards__info__main {
+  margin-bottom: 27px;
+}
+
+.packages-cards__title {
+  margin: 0px;
+  margin-top: 5px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.packages-cards__text {
+  display: block;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+  max-height: 165px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow-y: scroll;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.packages-cards__text::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.packages-cards__person {
+  margin-top: 34px;
+  margin-bottom: 37px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages-cards__person__map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+
+.packages-cards__person__map__text {
+  margin-left: 14px;
+}
+
+.packages-cards__person__room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packages-cards__person__room__text {
+  margin-left: 14px;
+}
+
+.packages-cards__person__guest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+
+.packages-cards__person__guest__text {
+  margin-left: 14px;
+}
+
+.packages-cards__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packages-cards__buy__noprice {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.packages-cards__buy__price {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.packages-cards__buy__button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 12px 28px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.packages-cards__offer {
+  position: absolute;
+  left: 0;
+  top: 26px;
+  padding: 8px 12px;
+  background-color: #EC1F46;
+  color: #fff;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 4px;
+}
+
+.packages-card-one {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.packages-card-one__image {
+  width: 100%;
+  height: 250px;
+}
+
+.packages-card-one__info {
+  background-color: #0A223D;
+  color: #fff;
+  padding: 30px 21px 24px 32px;
+}
+
+.packages-card-one__title {
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.packages-card-one__person {
+  margin-top: 23px;
+  margin-bottom: 24px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages-card-one__person__map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+
+.packages-card-one__person__map__text {
+  margin-left: 14px;
+}
+
+.packages-card-one__person__room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packages-card-one__person__room__text {
+  margin-left: 14px;
+}
+
+.packages-card-one__person__guest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+
+.packages-card-one__person__guest__text {
+  margin-left: 14px;
+}
+
+.packages-card-one__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packages-card-one__buy__noprice {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.packages-card-one__buy__price {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.packages-card-one__buy__button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 12px 28px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.packages-card-one__offer {
+  position: absolute;
+  left: 0;
+  top: 26px;
+  padding: 4px 9px;
+  background-color: #EC1F46;
+  color: #fff;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  border-radius: 4px;
+}
+
+.packages-card-two {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.packages-card-two__image {
+  width: 100%;
+  height: 250px;
+}
+
+.packages-card-two__info {
+  background-color: #0A223D;
+  color: #fff;
+  padding: 30px 21px 24px 32px;
+}
+
+.packages-card-two__title {
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.packages-card-two__person {
+  margin-top: 23px;
+  margin-bottom: 24px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages-card-two__person__map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+
+.packages-card-two__person__map__text {
+  margin-left: 14px;
+}
+
+.packages-card-two__person__room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packages-card-two__person__room__text {
+  margin-left: 14px;
+}
+
+.packages-card-two__person__guest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+
+.packages-card-two__person__guest__text {
+  margin-left: 14px;
+}
+
+.packages-card-two__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packages-card-two__buy__noprice {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.packages-card-two__buy__price {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.packages-card-two__buy__button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 12px 28px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.packages-card-two__offer {
+  position: absolute;
+  left: 0;
+  top: 26px;
+  padding: 4px 9px;
+  background-color: #EC1F46;
+  color: #fff;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  border-radius: 4px;
+}
+
+.packages-card-three {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.packages-card-three__image {
+  width: 100%;
+  height: 250px;
+}
+
+.packages-card-three__info {
+  background-color: #0A223D;
+  color: #fff;
+  padding: 30px 21px 24px 32px;
+}
+
+.packages-card-three__title {
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.packages-card-three__person {
+  margin-top: 23px;
+  margin-bottom: 24px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages-card-three__person__map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+
+.packages-card-three__person__map__text {
+  margin-left: 14px;
+}
+
+.packages-card-three__person__room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packages-card-three__person__room__text {
+  margin-left: 14px;
+}
+
+.packages-card-three__person__guest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+
+.packages-card-three__person__guest__text {
+  margin-left: 14px;
+}
+
+.packages-card-three__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packages-card-three__buy__noprice {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.packages-card-three__buy__price {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.packages-card-three__buy__button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 12px 28px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.packages-card-three__offer {
+  position: absolute;
+  left: 0;
+  top: 26px;
+  padding: 4px 9px;
+  background-color: #EC1F46;
+  color: #fff;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  border-radius: 4px;
+}
+
+.packages-card-four {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.packages-card-four__image {
+  width: 100%;
+  height: 250px;
+}
+
+.packages-card-four__info {
+  background-color: #0A223D;
+  color: #fff;
+  padding: 30px 21px 24px 32px;
+}
+
+.packages-card-four__title {
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.packages-card-four__person {
+  margin-top: 23px;
+  margin-bottom: 24px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages-card-four__person__map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+
+.packages-card-four__person__map__text {
+  margin-left: 14px;
+}
+
+.packages-card-four__person__room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packages-card-four__person__room__text {
+  margin-left: 14px;
+}
+
+.packages-card-four__person__guest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 11px;
+}
+
+.packages-card-four__person__guest__text {
+  margin-left: 14px;
+}
+
+.packages-card-four__buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.packages-card-four__buy__noprice {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.packages-card-four__buy__price {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.packages-card-four__buy__button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 12px 28px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.packages-card-four__offer {
+  position: absolute;
+  left: 0;
+  top: 26px;
+  padding: 4px 9px;
+  background-color: #EC1F46;
+  color: #fff;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  border-radius: 4px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -838,6 +1611,17 @@ img {
   .game {
     width: 230px;
     height: 230px;
+  }
+  .packages {
+    -ms-grid-rows: 450px 450px;
+    -ms-grid-columns: 300px 300px 300px;
+        grid-template: 450px 450px / 300px 300px 300px;
+  }
+  .packages-cards__text {
+    max-height: 120px;
+  }
+  .picture {
+    max-height: 200px;
   }
 }
 
@@ -927,6 +1711,11 @@ img {
     width: 340px;
     height: 255px;
     margin-bottom: 20px;
+  }
+  .packages {
+    -ms-grid-rows: 450px 450px 450px;
+    -ms-grid-columns: 335px 335px;
+        grid-template: 450px 450px 450px / 335px 335px;
   }
 }
 
@@ -1070,6 +1859,26 @@ img {
   .game:nth-child(4) {
     margin-bottom: 0;
   }
+  .packages {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 450px 450px 450px;
+    -ms-grid-columns: 280px 280px;
+        grid-template: 450px 450px 450px / 280px 280px;
+    gap: 10px;
+    margin-bottom: 70px;
+  }
+  .packages-cards {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1103,6 +1912,71 @@ img {
   }
   .reviews-slider__subscribe {
     max-width: 480px;
+  }
+  .other-packages-title {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .packages {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 450px 450px;
+    -ms-grid-columns: 480px;
+        grid-template: 450px 450px / 480px;
+    gap: 0;
+    margin-bottom: 50px;
+  }
+  .packages-cards {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .packages-cards__text {
+    display: none;
+  }
+  .packages-cards__img {
+    width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .packages-cards__info {
+    width: 100%;
+    padding: 15px 15px;
+  }
+  .packages-cards__person {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .packages-card-one {
+    margin-bottom: px;
+  }
+  .packages-card-one__person {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .packages-card-one__info {
+    padding: 15px 15px;
+  }
+  .packages-card-two {
+    display: none;
+  }
+  .packages-card-three {
+    display: none;
+  }
+  .packages-card-four {
+    display: none;
   }
 }
 
@@ -1157,6 +2031,71 @@ img {
   }
   .game:nth-child(4) {
     margin-bottom: 0;
+  }
+  .other-packages-title {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .packages {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 450px 450px;
+    -ms-grid-columns: 280px;
+        grid-template: 450px 450px / 280px;
+    gap: 0;
+    margin-bottom: 50px;
+  }
+  .packages-cards {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .packages-cards__text {
+    display: none;
+  }
+  .packages-cards__img {
+    width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .packages-cards__info {
+    width: 100%;
+    padding: 15px 15px;
+  }
+  .packages-cards__person {
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+  .packages-card-one {
+    margin-bottom: px;
+  }
+  .packages-card-one__person {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .packages-card-one__info {
+    padding: 15px 15px;
+  }
+  .packages-card-two {
+    display: none;
+  }
+  .packages-card-three {
+    display: none;
+  }
+  .packages-card-four {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
