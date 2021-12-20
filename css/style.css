@@ -1825,7 +1825,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     min-height: 160px;
-    max-width: 576px;
+    max-width: 92%;
   }
   .reviews__title {
     font-size: 28px;
@@ -1847,7 +1847,7 @@ img {
             transform: translate(-50%, 0);
   }
   .reviews-slider__subscribe {
-    max-width: 580px;
+    max-width: 92%;
     padding: 0 30px 30px;
   }
   .reviews-slider__subscribe::after, .reviews-slider__subscribe::before {
@@ -1862,11 +1862,12 @@ img {
   .packages {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 450px 450px 450px;
-    -ms-grid-columns: 280px 280px;
-        grid-template: 450px 450px 450px / 280px 280px;
-    gap: 10px;
+    -ms-grid-rows: 435px 435px;
+    -ms-grid-columns: 275px 275px;
+        grid-template: 435px 435px / 275px 275px;
+    gap: 0;
     margin-bottom: 70px;
+    max-width: 92%;
   }
   .packages-cards {
     -ms-grid-column: 1;
@@ -1878,6 +1879,19 @@ img {
     display: flex;
     border-radius: 6px;
     overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .packages-cards__buy {
+    margin-bottom: 5px;
+  }
+  .packages-card-one {
+    margin-right: 10px;
+  }
+  .packages-card-three {
+    display: none;
+  }
+  .packages-card-four {
+    display: none;
   }
 }
 
@@ -1901,7 +1915,7 @@ img {
     min-width: 100%;
   }
   .newsletter-wrapper {
-    max-width: 480px;
+    max-width: 92%;
   }
   .newsletter-wrapper__new {
     font-size: 30px;
@@ -1911,7 +1925,7 @@ img {
     max-width: 80%;
   }
   .reviews-slider__subscribe {
-    max-width: 480px;
+    max-width: 92%;
   }
   .other-packages-title {
     font-family: Mulish;
@@ -1924,8 +1938,8 @@ img {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 450px 450px;
-    -ms-grid-columns: 480px;
-        grid-template: 450px 450px / 480px;
+    -ms-grid-columns: 95%;
+        grid-template: 450px 450px / 95%;
     gap: 0;
     margin-bottom: 50px;
   }
@@ -1941,6 +1955,8 @@ img {
     border-radius: 6px;
     overflow: hidden;
     margin-bottom: 20px;
+    -ms-grid-column: 1;
+    grid-column: 1 / 1;
   }
   .packages-cards__text {
     display: none;
@@ -1960,7 +1976,7 @@ img {
     margin-bottom: 8px;
   }
   .packages-card-one {
-    margin-bottom: px;
+    min-width: 100%;
   }
   .packages-card-one__person {
     margin-top: 8px;
@@ -1968,6 +1984,9 @@ img {
   }
   .packages-card-one__info {
     padding: 15px 15px;
+  }
+  .packages-card-one__image {
+    width: 100%;
   }
   .packages-card-two {
     display: none;

@@ -147,7 +147,7 @@
       align-items: flex-start 
       flex-direction: column
       min-height: 160px
-      max-width: 576px
+      max-width: 92%
   .reviews
     &__title
       font-size: 28px
@@ -164,7 +164,7 @@
           margin-left: -65px
           transform: translate(-50%, 0)
       &__subscribe
-        max-width: 580px
+        max-width: 92%
         padding: 0 30px 30px
         &::after, &::before
           display: none
@@ -174,15 +174,25 @@
       margin-bottom: 0
   .packages
     display: grid
-    grid-template: 450px 450px 450px / 280px 280px
-    gap: 10px
+    grid-template: 435px 435px / 275px 275px
+    gap: 0
     margin-bottom: 70px
+    max-width: 92%
     &-cards
       grid-column: 1 / span 2
       position: relative
       display: flex
       border-radius: 6px 
-      overflow: hidden 
+      overflow: hidden
+      margin-bottom: 10px
+      &__buy
+        margin-bottom: 5px
+    &-card-one
+      margin-right: 10px
+    &-card-three
+      display: none
+    &-card-four
+      display: none
 
 
 @media (max-width: 576px)
@@ -201,7 +211,7 @@
     min-width: 100%
   .newsletter
     &-wrapper
-      max-width: 480px
+      max-width: 92%
       &__new
         font-size: 30px
         line-height: 38px
@@ -210,7 +220,7 @@
   .reviews
     &-slider
       &__subscribe
-        max-width: 480px
+        max-width: 92%
   .other-packages
     &-title
       font-family: Mulish
@@ -220,7 +230,7 @@
       line-height: 30px
   .packages
     display: grid
-    grid-template: 450px 450px / 480px
+    grid-template: 450px 450px / 95%
     gap: 0
     margin-bottom: 50px
     &-cards
@@ -230,6 +240,7 @@
       border-radius: 6px 
       overflow: hidden
       margin-bottom: 20px
+      grid-column: 1 / 1
       &__text
         display: none
       &__img
@@ -243,12 +254,14 @@
         margin-top: 8px
         margin-bottom: 8px
     &-card-one
-      margin-bottom: px
+      min-width: 100%
       &__person
         margin-top: 8px
         margin-bottom: 8px
       &__info
         padding: 15px 15px
+      &__image
+        width: 100%
     &-card-two
       display: none
     &-card-three
