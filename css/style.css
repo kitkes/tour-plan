@@ -1863,8 +1863,8 @@ img {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 435px 435px;
-    -ms-grid-columns: 275px 275px;
-        grid-template: 435px 435px / 275px 275px;
+    -ms-grid-columns: 55% 55%;
+        grid-template: 435px 435px / 55% 55%;
     gap: 0;
     margin-bottom: 70px;
     max-width: 92%;
