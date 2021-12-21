@@ -1598,6 +1598,15 @@ img {
   border-radius: 4px;
 }
 
+.footer {
+  background-color: #0A223D;
+}
+
+.footer__logo {
+  width: 166px;
+  height: 192px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
