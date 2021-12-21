@@ -16,7 +16,11 @@
         max-height: 120px
   .picture
     max-height: 200px
-    
+  .information
+    margin-left: 30px
+  .footer
+    &__input
+      flex-basis: 100%
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -82,8 +86,30 @@
     margin-bottom: 20px
   .packages
     grid-template: 450px 450px 450px / 335px 335px
-
-
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(3, minmax(min-content, 1fr))
+    &__logo
+      grid-row: 1 / 2
+      width: 104px
+    &__fields
+      grid-row: 7 / 7
+    &__input
+      max-width: 255px
+  .social
+    grid-row: 1 / 2
+    grid-column: span 3
+    align-items: center
+  .categories
+    grid-row: 2 / 3
+  .details
+    grid-row: 4 / 5
+    grid-column: span 4
+  .message
+    grid-column: 1 / span 3
+    grid-row: 5
+  .information
+    margin-left: 0
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -144,7 +170,7 @@
   .newsletter
     padding: 76px 20px 83px 20px
     &-wrapper
-      align-items: flex-start 
+      align-items: flex-start
       flex-direction: column
       min-height: 160px
       max-width: 92%
@@ -182,9 +208,11 @@
       grid-column: 1 / span 2
       position: relative
       display: flex
-      border-radius: 6px 
+      border-radius: 6px
       overflow: hidden
       margin-bottom: 10px
+      &__text
+        max-height: 90px
       &__buy
         margin-bottom: 5px
     &-card-one
@@ -193,7 +221,18 @@
       display: none
     &-card-four
       display: none
-
+  .footer
+    &__bottom
+      flex-wrap: wrap
+      justify-content: start
+      &__stack
+        flex-basis: 100%
+      &__image
+        margin-left: 0
+        margin-top: 10px
+        align-self:
+    &__form
+      max-width: 100%
 
 @media (max-width: 576px)
   .container
@@ -237,7 +276,7 @@
       position: relative
       display: flex
       flex-direction: column
-      border-radius: 6px 
+      border-radius: 6px
       overflow: hidden
       margin-bottom: 20px
       grid-column: 1 / 1
@@ -245,7 +284,7 @@
         display: none
       &__img
         width: 100%
-        height: 200px 
+        height: 200px
         object-fit: cover
       &__info
         width: 100%
@@ -268,10 +307,6 @@
       display: none
     &-card-four
       display: none
-    
-
-
-
 
 @media (min-width: 320px) and (max-width: 480px)
   .container
@@ -332,14 +367,14 @@
       position: relative
       display: flex
       flex-direction: column
-      border-radius: 6px 
+      border-radius: 6px
       overflow: hidden
       margin-bottom: 20px
       &__text
         display: none
       &__img
         width: 100%
-        height: 200px 
+        height: 200px
         object-fit: cover
       &__info
         width: 100%
@@ -360,6 +395,31 @@
       display: none
     &-card-four
       display: none
-  
-      
-  
+  .footer
+    &-wrapper
+      grid-template-columns: 280px
+      gap: 30px
+    &__logo
+      grid-row: 1
+    &__social-network
+      flex-wrap: wrap
+    &__link-wrapper
+      margin-top: 20px
+    &__input
+      max-width: 280px
+  .social
+    grid-row: 2
+    grid-column: 1 / 1
+  .information
+    grid-row: 3
+  .additional
+    grid-row: 4
+  .categories
+    grid-row: 5
+  .details
+    grid-row: 6
+    max-width: 280px
+  .message
+    grid-row: 7
+    max-width: 280px
+    margin-top: 50px
