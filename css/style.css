@@ -138,6 +138,14 @@ img {
   color: #333333;
 }
 
+.navbar__user__mobile_visible {
+  display: none;
+}
+
+.navbar__search__mobile_visible {
+  display: none;
+}
+
 .breadcrumbs-list {
   list-style-type: none;
   display: -webkit-box;
@@ -2054,8 +2062,94 @@ img {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search, .navbar-menu, .navbar-user {
+  body {
+    padding-top: 78px;
+  }
+  .navbar-menu__visible {
+    padding-top: 31px;
+  }
+  .navbar__mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+  }
+  .navbar__user {
+    margin-bottom: 7px;
+  }
+  .navbar__user__mobile_hidden {
     display: none;
+  }
+  .navbar__user__mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .navbar__user__mobile_visible__link {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar__user__mobile_visible__avatar {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .navbar__user__mobile_visible__name {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+  }
+  .navbar__search {
+    margin-bottom: 19px;
+  }
+  .navbar__search__mobile_hidden {
+    display: none;
+  }
+  .navbar__search__mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 240px;
+    max-height: 40px;
+  }
+  .navbar__search__mobile_visible__input {
+    padding-right: 68px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #333333;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    top: 78px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .navbar-bottom__visible {
+    display: block;
+  }
+  .navbar-menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
   }
   .menu-button {
     display: -webkit-box;

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -32,7 +32,10 @@
             />
           </a>
 
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search__mobile_hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -42,7 +45,7 @@
               <img src="img/search.svg" alt="" />
             </button>
           </form>
-          <div class="user navbar-user">
+          <div class="user navbar__user navbar__user__mobile_hidden">
             <a href="#" class="user__link">
               <img
                 src="img/user-avatar.jpg"
@@ -64,8 +67,46 @@
       <!-- /.container -->
       <div class="navbar-bottom">
         <div class="container">
-          <nav class="navbar-menu">
-            <ul class="navbar-menu__list">
+          <nav class="navbar-menu navbar-menu__visible">
+            <ul class="navbar-menu__list navbar-menu__list__visible">
+              <li class="navbar-menu__item navbar-menu__item__user">
+                <div class="user navbar__user navbar__user__mobile_visible">
+                  <a
+                    href="#"
+                    class="user__link navbar__user__mobile_visible__link"
+                  >
+                    <img
+                      src="img/user-avatar.jpg"
+                      alt="avatar: Nathan"
+                      class="user__avatar navbar__user__mobile_visible__avatar"
+                    />
+                    <span class="user__name navbar__user__mobile_visible__name"
+                      >Nathan</span
+                    >
+                  </a>
+                </div>
+                <!-- /.user -->
+              </li>
+              <li class="navbar-menu__item navbar-menu__item__search">
+                <form
+                  action="#"
+                  class="search navbar__search navbar__search__mobile_visible"
+                >
+                  <input
+                    type="text"
+                    class="search__input navbar__search__mobile_visible__input"
+                    placeholder="Search Location"
+                  />
+                  <button
+                    class="
+                      search__button
+                      navbar__search__mobile_visible__button
+                    "
+                  >
+                    <img src="img/search.svg" alt="" />
+                  </button>
+                </form>
+              </li>
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">All Deals</a>
               </li>
