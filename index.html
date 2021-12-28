@@ -593,11 +593,16 @@
             <span class="newsletter-wrapper__text__new">Newsletter</span>
           </div>
           <!--newsletter-wrapper__text  -->
-          <form action="#" class="newsletter-wrapper__send">
+          <form
+            action="send.php"
+            method="POST"
+            class="newsletter-wrapper__send"
+          >
             <input
               type="text"
               class="newsletter-wrapper__send__input"
               placeholder="Your email address"
+              name="email"
             />
             <button class="newsletter-wrapper__send__button">Send</button>
           </form>
@@ -921,22 +926,25 @@
             <!-- /.footer__contact-details -->
             <div class="footer__message message">
               <h3 class="footer__title message__title">Send us a message</h3>
-              <form action="#" class="footer__form">
+              <form action="send.php" method="POST" class="footer__form">
                 <input
                   type="text"
                   class="footer__input footer__input__name"
                   placeholder="Your Full Name*"
+                  name="name"
                 />
                 <input
                   type="text"
                   class="footer__input footer__input__phone"
                   placeholder="Phone Number*"
+                  name="phone"
                 />
                 <textarea
                   cols="30"
                   rows="10"
                   class="footer__area"
                   placeholder="Message"
+                  name="message"
                 ></textarea>
                 <button class="footer__button">Send</button>
                 <span class="footer__field">* Required Fields</span>
