@@ -11,19 +11,23 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
-$body = "
-<h2>Новое обращение от:</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-<b>Сообщение:</b><br>$email
-";
-$text = "Новое обращение Best Tour Plan";
-$main = "
-<h2>Новое обращение:</h2>
-<b>Новая почта:</b><br>$email
-";
+if(isset($_POST['email'])){
+    // если есть что-то в $_POST['email']
+    $title = "Новое обращение Best Tour Plan";
+    $body = "
+    <h2>Новый электронный адрес:</h2>
+    <b>Эл.адрес:</b> $email<br>
+    ";
+} else {
+    // если нет, отправлена форма с телефоном и пр.
+    $title = "Новое обращение Best Tour Plan";
+    $body = "
+    <h2>Новое обращение от:</h2>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br><br>
+    <b>Сообщение:</b><br>$message
+    ";
+}
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -40,7 +44,7 @@ try {
     $mail->Password   = 'mvvzbwsomdoabpfl'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('nikitast68@stukovnik.ru', 'Никита Стуков'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('nikitast68@gmail.com', 'No Stress'); // Адрес самой почты и имя отправителя
     $mail->FromName = 'stukovnik.ru';
 
     // Получатель письма
@@ -50,10 +54,6 @@ try {
     $mail->isHTML(true);
     $mail->Subject = $title;
     $mail->Body = $body;    
-    // Отправка сообщения
-    $mail->isHTML(true);
-    $mail->Subject = $text;
-    $mail->Body = $main;    
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
