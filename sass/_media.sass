@@ -21,6 +21,9 @@
   .footer
     &__input
       flex-basis: 100%
+  .modal
+    &__dialog
+      width: 478px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -117,6 +120,9 @@
   body
     padding-top: 78px
   .navbar
+    &-bottom
+      &__visible
+        overflow-y: auto
     &-menu
       &__visible
         padding-top: 31px
@@ -295,6 +301,10 @@
         align-self:
     &__form
       max-width: 100%
+  .modal
+    &__dialog
+      margin-top: 25px
+      width: 576px
 
 @media (max-width: 576px)
   .container
@@ -369,6 +379,9 @@
       display: none
     &-card-four
       display: none
+  .modal
+    &__dialog
+      max-width: 92%
 
 @media (min-width: 320px) and (max-width: 480px)
   .container
@@ -485,3 +498,12 @@
     grid-row: 7
     max-width: 280px
     margin-top: 50px
+  .modal
+    &__dialog
+      max-width: 280px
+      padding: 13px 13px
+    &__button
+      width: 130px
+      height: 35px
+      text-align: center
+      padding: 10px 25px 20px 25px
