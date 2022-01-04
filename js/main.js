@@ -46,13 +46,13 @@ $(document).ready(function () {
   
   $(".newsletter").parallax({ imageSrc: "img/newsletter.jpg" });
   
-  var menuButton = $(".menu-button");
-  menuButton.on("click", function () {
-    console.log ("Клик по кнопке меню");
-    document
-    .$(".navbar-bottom")
-    .toggleClass("navbar-bottom__visible");
-  });
+  var menuButton = document.querySelector (".menu-button");
+  menuButton.addEventListener ("click", function () {
+  console.log ("Клик по кнопке меню");
+  document
+  .querySelector(".navbar-bottom")
+  .classList.toggle("navbar-bottom__visible");
+});
   
   var modalButton = $("[data-toggle=modal]");
   var closemodalButton = $(".modal__close");
