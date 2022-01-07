@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -29,10 +30,14 @@
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
               class="logo__image"
+              data-aos="fade-right"
+              data-aos-delay="150"
             />
           </a>
 
           <form
+            data-aos="fade-right"
+            data-aos-delay="300"
             action="#"
             class="search navbar__search navbar__search__mobile_hidden"
           >
@@ -45,7 +50,11 @@
               <img src="img/search.svg" alt="" />
             </button>
           </form>
-          <div class="user navbar__user navbar__user__mobile_hidden">
+          <div
+            class="user navbar__user navbar__user__mobile_hidden"
+            data-aos="fade-left"
+            data-aos-delay="150"
+          >
             <a href="#" class="user__link">
               <img
                 src="img/user-avatar.jpg"
@@ -287,7 +296,7 @@
         <div class="container">
           <h2 class="other-packages-title">Other Packages</h2>
           <div class="packages">
-            <div class="packages-cards">
+            <div class="packages-cards" data-aos="fade-right">
               <img
                 src="img/packages-1.jpg"
                 alt="Blue Haven"
@@ -356,7 +365,7 @@
             </div>
             <!-- /.packages__cards -->
 
-            <div class="packages-card-one">
+            <div class="packages-card-one" data-aos="fade-left">
               <img
                 src="img/packages-2.jpg"
                 alt="Blue Haven"
@@ -411,7 +420,7 @@
             </div>
             <!-- /.packages__card-one -->
 
-            <div class="packages-card-two">
+            <div class="packages-card-two" data-aos="fade-up">
               <img
                 src="img/packages-3.jpg"
                 alt="Blue Haven"
@@ -466,7 +475,7 @@
             </div>
             <!-- /.packages__card-two" -->
 
-            <div class="packages-card-three">
+            <div class="packages-card-three" data-aos="fade-up">
               <img
                 src="img/packages-4.jpg"
                 alt="Blue Haven"
@@ -521,7 +530,7 @@
             </div>
             <!-- /.packages__card-three-->
 
-            <div class="packages-card-four">
+            <div class="packages-card-four" data-aos="fade-up">
               <img
                 src="img/packages-5.jpg"
                 alt="Blue Haven"
@@ -587,7 +596,7 @@
         data-image-src="img/newsletter.jpg"
       >
         <div class="newsletter-wrapper">
-          <div class="newsletter-wrapper__text">
+          <div class="newsletter-wrapper__text" data-aos="fade-down">
             <h2 class="newsletter-wrapper__text__title">subscribe to our</h2>
             <span class="newsletter-wrapper__text__new">Newsletter</span>
           </div>
@@ -596,6 +605,7 @@
             action="send.php"
             method="POST"
             class="newsletter-wrapper__send"
+            data-aos="fade-up"
           >
             <input
               type="text"
@@ -737,7 +747,11 @@
       <section class="activities">
         <div class="container">
           <h2 class="activities-title">Other Activities</h2>
-          <div class="activities-action">
+          <div
+            class="activities-action"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
             <div class="activities-action__chamarel game">
               <img
                 src="img/chamarel.jpg"
@@ -750,13 +764,21 @@
               <button class="activities-action__button">Book Now</button>
             </div>
             <!-- /.activities-action__chamarel game -->
-            <div class="activities-action__golf game">
+            <div
+              class="activities-action__golf game"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
               <img src="img/golf.jpg" alt="" class="activities-action__img" />
               <h3 class="activities-action__text">Gymkhana club golf course</h3>
               <button class="activities-action__button">Book Now</button>
             </div>
             <!-- /.activities-action__golf game -->
-            <div class="activities-action__tamarind game">
+            <div
+              class="activities-action__tamarind game"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
               <img
                 src="img/tamarind.jpg"
                 alt=""
@@ -768,7 +790,11 @@
               <button class="activities-action__button">Book Now</button>
             </div>
             <!-- /.activities-action__tamarind game -->
-            <div class="activities-action__marine game">
+            <div
+              class="activities-action__marine game"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
               <img src="img/marine.jpg" alt="" class="activities-action__img" />
               <h3 class="activities-action__text">
                 The blue marine discovery quest
@@ -1040,6 +1066,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
