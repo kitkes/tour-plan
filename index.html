@@ -98,10 +98,7 @@
                     placeholder="Search Location"
                   />
                   <button
-                    class="
-                      search__button
-                      navbar__search__mobile_visible__button
-                    "
+                    class="search__button navbar__search__mobile_visible__button"
                   >
                     <img src="img/search.svg" alt="" />
                   </button>
@@ -605,6 +602,7 @@
               class="newsletter-wrapper__send__input"
               placeholder="Your email address"
               name="email"
+              required
             />
             <button class="newsletter-wrapper__send__button">Send</button>
           </form>
@@ -929,18 +927,25 @@
             <div class="footer__message message">
               <h3 class="footer__title message__title">Send us a message</h3>
               <form action="send.php" method="POST" class="footer__form">
-                <input
-                  type="text"
-                  class="footer__input footer__input__name"
-                  placeholder="Your Full Name*"
-                  name="name"
-                />
-                <input
-                  type="text"
-                  class="footer__input footer__input__phone"
-                  placeholder="Phone Number*"
-                  name="phone"
-                />
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="footer__input footer__input__name"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    minlength="2"
+                    required
+                  />
+                </div>
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="footer__input footer__input__phone phone__ru"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                  />
+                </div>
                 <textarea
                   cols="30"
                   rows="10"
@@ -986,24 +991,30 @@
           />
         </a>
         <h3 class="modal__title">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="modal__input modal__input__name"
             placeholder="Your Full Name*"
             name="name"
+            minlength="2"
+            required
           />
           <input
             type="phone"
-            class="modal__input modal__input__phone"
+            class="modal__input modal__input__phone phone__ru"
             placeholder="Phone Number*"
             name="phone"
+            phone="true"
+            required
           />
           <input
-            type="email"
+            type="text"
             class="modal__input modal__input__email"
             placeholder="Email*"
-            name="phone"
+            name="email"
+            email="true"
+            required
           />
           <textarea
             cols="30"
@@ -1027,6 +1038,8 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

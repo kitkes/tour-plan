@@ -78,4 +78,46 @@ $(document).ready(function () {
       $(".modal__dialog").removeClass("modal__dialog--visible");
     }
   });
+
+  $(".form").validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Enter your name",
+        minlength: "Must be at least 2 characters"
+      },
+      email: {
+        required: "Enter your email adress",
+        email: "Your email should be in this format name@domain.com"
+      },
+      phone: {
+        required: "Enter your phone number"
+      },
+    }
+  });
+  $(".footer__form").validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Enter your name",
+        minlength: "Must be at least 2 characters"
+      },
+      phone: {
+        required: "Enter your phone number"
+      },
+    }
+  });
+  $(".newsletter-wrapper__send").validate({
+    errorClass: "invalid",
+    messages: {
+      email: {
+        required: "Enter your email adress",
+        email: "Your email should be in this format name@domain.com"
+      }
+    }
+  });
+  $(document).ready(function(){
+    $('.phone__ru').mask('+7(000) 000-00-00');
+  });
 });
+
