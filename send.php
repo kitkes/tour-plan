@@ -7,8 +7,12 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
-$message = $_POST['message'];
 $email = $_POST['email'];
+$message = $_POST['message'];
+$modal__name = $_POST['modal__name'];
+$modal__phone = $_POST['modal__phone'];
+$modal__email = $_POST['modal__email'];
+$modal__message = $_POST['modal__message'];
 
 // Формирование самого письма
 if(isset($_POST['email'])){
@@ -26,6 +30,17 @@ if(isset($_POST['email'])){
     <b>Имя:</b> $name<br>
     <b>Телефон:</b> $phone<br><br>
     <b>Сообщение:</b><br>$message
+    ";
+}
+
+if(isset($_POST['modal__name'])){
+    $title = "Новое обращение Best Tour Plan";
+    $body = "
+    <h2>Новое обращение от:</h2>
+    <b>Имя:</b> $modal__name<br>
+    <b>Телефон:</b> $modal__phone<br><br>
+    <b>Почта:</b> $modal__email<br><br>
+    <b>Сообщение:</b><br>$modal__message
     ";
 }
 
@@ -53,7 +68,7 @@ try {
     // Отправка сообщения
     $mail->isHTML(true);
     $mail->Subject = $title;
-    $mail->Body = $body;    
+    $mail->Body = $body;
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
@@ -66,3 +81,4 @@ else {$result = "error";}
 
 // Отображение результата
 header('Location: thankyou.html');
+?>

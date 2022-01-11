@@ -81,6 +81,17 @@ $(document).ready(function () {
 
   $(".form").validate({
     errorClass: "invalid",
+    rules: {
+      name: "required",
+      email: {
+        required: true,
+        email: true
+      },
+      phone: {
+        required: true,
+        phone: true
+      }
+      },
     messages: {
       name: {
         required: "Enter your name",
@@ -97,6 +108,13 @@ $(document).ready(function () {
   });
   $(".footer__form").validate({
     errorClass: "invalid",
+    rules: {
+      name: "required",
+      phone: {
+        required: true,
+        phone: true
+      }
+      },
     messages: {
       name: {
         required: "Enter your name",
@@ -109,6 +127,12 @@ $(document).ready(function () {
   });
   $(".newsletter-wrapper__send").validate({
     errorClass: "invalid",
+    rules: {
+      email: {
+        required=true,
+        email=true
+      },
+      },
     messages: {
       email: {
         required: "Enter your email adress",

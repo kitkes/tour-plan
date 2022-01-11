@@ -16,6 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -612,6 +614,7 @@
               class="newsletter-wrapper__send__input"
               placeholder="Your email address"
               name="email"
+              email="true"
               required
             />
             <button class="newsletter-wrapper__send__button">Send</button>
@@ -970,6 +973,7 @@
                     placeholder="Phone Number*"
                     name="phone"
                     required
+                    phone="true"
                   />
                 </div>
                 <textarea
@@ -1022,7 +1026,7 @@
             type="text"
             class="modal__input modal__input__name"
             placeholder="Your Full Name*"
-            name="name"
+            name="modal__name"
             minlength="2"
             required
           />
@@ -1030,7 +1034,7 @@
             type="phone"
             class="modal__input modal__input__phone phone__ru"
             placeholder="Phone Number*"
-            name="phone"
+            name="modal__phone"
             phone="true"
             required
           />
@@ -1038,7 +1042,7 @@
             type="text"
             class="modal__input modal__input__email"
             placeholder="Email*"
-            name="email"
+            name="modal__email"
             email="true"
             required
           />
