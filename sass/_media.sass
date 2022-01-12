@@ -61,8 +61,12 @@
     max-width: 340px
     max-height: 210px
     &-button
-      &:not([disabled]):hover
-        cursor: pointer
+      &:not([disabled])
+        &:hover
+          color: $white
+          background-color: $primary
+          cursor: pointer
+
   .hotel-map
     max-width: 340px
     max-height: 210px
@@ -116,6 +120,23 @@
     grid-row: 5
   .information
     margin-left: 0
+  .hover
+    &:not([disabled])
+      &:hover
+        color: $white
+        background-color: $primary
+        cursor: pointer
+  .hover
+    &-link
+      &:not([disabled])
+        &:hover
+          color: $text-color
+  .hover
+    &-footer
+      &-link
+        &:not([disabled])
+          &:hover
+            color: $foot-col
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -130,7 +151,7 @@
       &__visible
         padding-top: 31px
     &__mobile
-      &_fixed
+      &__fixed
         position: fixed
         left: 0
         top: 0
@@ -139,9 +160,9 @@
     &__user
       margin-bottom: 7px
       &__mobile
-        &_hidden
+        &__hidden
           display: none
-        &_visible
+        &__visible
           display: flex
           flex-wrap: wrap
           &__link
@@ -160,9 +181,9 @@
     &__search
       margin-bottom: 19px
       &__mobile
-        &_hidden
+        &__hidden
           display: none
-        &_visible
+        &__visible
           display: flex
           max-width: 240px
           max-height: 40px
@@ -312,6 +333,8 @@
     &__dialog
       margin-top: 25px
       width: 576px
+  .details
+    max-width: 435px
 
 @media (max-width: 576px)
   .container
@@ -386,9 +409,41 @@
       display: none
     &-card-four
       display: none
+  .footer
+    &-wrapper
+      grid-template-columns: 280px
+      gap: 30px
+    &__logo
+      grid-row: 1
+    &__social-network
+      flex-wrap: wrap
+    &__link-wrapper
+      margin-top: 20px
+    &__input
+      &-group
+        max-width: 280px
+  .social
+    grid-row: 2
+    grid-column: 1 / 1
+  .information
+    grid-row: 3
+  .additional
+    grid-row: 4
+  .categories
+    grid-row: 5
+  .details
+    grid-row: 6
+    width: 480px
+  .message
+    grid-row: 7
+    max-width: 280px
+    margin-top: 50px
   .modal
     &__dialog
       max-width: 92%
+  .booking
+    max-width: 340px
+    max-height: 210px
 
 @media (min-width: 320px) and (max-width: 480px)
   .container
