@@ -60,6 +60,9 @@
   .booking
     max-width: 340px
     max-height: 210px
+    &-button
+      &:not([disabled]):hover
+        cursor: pointer
   .hotel-map
     max-width: 340px
     max-height: 210px
@@ -185,6 +188,10 @@
         flex-direction: column
       &__item
         margin-bottom: 20px
+        &__search
+          display: block
+        &__user
+          display: block
   .menu
     &-button
       display: flex

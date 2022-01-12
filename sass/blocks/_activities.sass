@@ -34,7 +34,7 @@
       color: $white
       text-align: left
       max-width: 200px
-      max-height: 150px 
+      max-height: 150px
       margin-bottom: 1px
       flex-shrink: 0
       overflow-y: scroll
@@ -61,6 +61,12 @@
       color: $white
       padding: 7px 22px
       cursor: pointer
+      overflow-y: auto
+      overflow-x: auto
+      &:hover
+        background-color: #fff
+        color: $text-color
+        transition: 0.3s
 .game
   position: relative
   width: 255px
@@ -76,4 +82,3 @@
     left: 0
     background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%)
     z-index: 0
-    

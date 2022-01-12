@@ -58,6 +58,20 @@
   text-transform: uppercase;
 }
 
+.navbar-menu__link:hover {
+  color: red;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.navbar-menu__item__user {
+  display: none;
+}
+
+.navbar-menu__item__search {
+  display: none;
+}
+
 .logo {
   width: 177px;
   height: auto;
@@ -93,6 +107,7 @@
   background-color: #EC1F46;
   border-radius: 0px 6px 6px 0px;
   border: none;
+  cursor: pointer;
 }
 
 .user__avatar {
@@ -326,7 +341,7 @@
   margin-bottom: 18px;
 }
 
-.booking-price--person {
+.booking__price__person {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,7 +350,7 @@
           justify-content: space-between;
 }
 
-.booking-price {
+.booking__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,7 +361,7 @@
   margin-bottom: 9px;
 }
 
-.booking-price__starts {
+.booking__price__starts {
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
@@ -355,7 +370,7 @@
   margin-bottom: 0;
 }
 
-.booking-price__value {
+.booking__price__value {
   font-family: Nunito;
   font-style: normal;
   font-weight: 800;
@@ -364,7 +379,7 @@
   margin-bottom: 1px;
 }
 
-.booking-price__per-room {
+.booking__price__per-room {
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
@@ -430,6 +445,15 @@
   background-color: #EC1F46;
   border: none;
   cursor: pointer;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.booking-button:hover {
+  background-color: #fff;
+  color: #333333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .hotel-map {
@@ -540,7 +564,7 @@
   right: 0;
   border: none;
   background-color: #EC1F46;
-  min-width: 65px;
+  width: 65px;
   height: 100%;
   font-family: Mulish;
   font-style: normal;
@@ -548,6 +572,9 @@
   font-size: 12px;
   line-height: 15px;
   color: #fff;
+  cursor: pointer;
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 .reviews {
@@ -793,6 +820,15 @@
   color: #fff;
   padding: 7px 22px;
   cursor: pointer;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.activities-action__button:hover {
+  background-color: #fff;
+  color: #333333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .game {
@@ -998,6 +1034,17 @@
   border-radius: 4px;
   cursor: pointer;
   color: #fff;
+  max-width: 125px;
+  height: 43px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.packages-cards__buy__button:hover {
+  background-color: #fff;
+  color: #333333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .packages-cards__offer {
@@ -1141,6 +1188,17 @@
   border-radius: 4px;
   cursor: pointer;
   color: #fff;
+  max-width: 125px;
+  height: 43px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.packages-card-one__buy__button:hover {
+  background-color: #fff;
+  color: #333333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .packages-card-one__offer {
@@ -1284,6 +1342,17 @@
   border-radius: 4px;
   cursor: pointer;
   color: #fff;
+  max-width: 125px;
+  height: 43px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.packages-card-two__buy__button:hover {
+  background-color: #fff;
+  color: #333333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .packages-card-two__offer {
@@ -1427,6 +1496,17 @@
   border-radius: 4px;
   cursor: pointer;
   color: #fff;
+  max-width: 125px;
+  height: 43px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.packages-card-three__buy__button:hover {
+  background-color: #fff;
+  color: #333333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .packages-card-three__offer {
@@ -1570,6 +1650,17 @@
   border-radius: 4px;
   cursor: pointer;
   color: #fff;
+  max-width: 125px;
+  height: 43px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.packages-card-four__buy__button:hover {
+  background-color: #fff;
+  color: #333333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .packages-card-four__offer {
@@ -1647,8 +1738,32 @@
   line-height: 160%;
 }
 
+.footer__item__tel {
+  text-decoration: none;
+  color: #BDBDBD;
+}
+
+.footer__item__tel:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__item__mail {
+  text-decoration: none;
+  color: #BDBDBD;
+}
+
+.footer__item__mail:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .footer__item__mb20 {
   margin-bottom: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer__link {
@@ -1659,6 +1774,13 @@
   font-size: 14px;
   line-height: 160%;
   color: #BDBDBD;
+  cursor: pointer;
+}
+
+.footer__link:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .footer__text {
@@ -1750,7 +1872,7 @@
 }
 
 .footer__button {
-  padding: 18px 65px;
+  padding: 16px 65px;
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
@@ -1762,6 +1884,16 @@
   line-height: 15px;
   max-width: 160px;
   height: 50px;
+  cursor: pointer;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.footer__button:hover {
+  background-color: #fff;
+  color: #333333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .footer__field {
@@ -1796,6 +1928,12 @@
 .footer__bottom__link:not(:last-child)::after {
   content: '';
   margin-right: 10px;
+}
+
+.footer__bottom__link:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .footer__bottom__image {
@@ -1900,6 +2038,7 @@
   z-index: 20;
   visibility: hidden;
   opacity: 0;
+  overflow-y: auto;
 }
 
 .modal__dialog--visible {
@@ -2042,13 +2181,6 @@ img {
   border: none;
 }
 
-.invalidet {
-  color: #EC1F46;
-  border: none;
-  position: fixed;
-  bottom: -15px;
-}
-
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -2140,6 +2272,9 @@ img {
   .booking {
     max-width: 340px;
     max-height: 210px;
+  }
+  .booking-button:not([disabled]):hover {
+    cursor: pointer;
   }
   .hotel-map {
     max-width: 340px;
@@ -2324,6 +2459,12 @@ img {
   }
   .navbar-menu__item {
     margin-bottom: 20px;
+  }
+  .navbar-menu__item__search {
+    display: block;
+  }
+  .navbar-menu__item__user {
+    display: block;
   }
   .menu-button {
     display: -webkit-box;

@@ -79,10 +79,10 @@ $(document).ready(function () {
     }
   });
 
-  $(".form").validate({
+  $(".modal__form").validate({
     errorClass: "invalid",
     rules: {
-      name: "required",
+      name: 'required',
       email: {
         required: true,
         email: true
@@ -103,7 +103,7 @@ $(document).ready(function () {
       },
       phone: {
         required: "Enter your phone number"
-      },
+      }
     }
   });
   $(".footer__form").validate({
@@ -122,16 +122,16 @@ $(document).ready(function () {
       },
       phone: {
         required: "Enter your phone number"
-      },
+      }
     }
   });
   $(".newsletter-wrapper__send").validate({
     errorClass: "invalid",
     rules: {
       email: {
-        required=true,
-        email=true
-      },
+        required: true,
+        email: true
+      }
       },
     messages: {
       email: {
@@ -141,7 +141,7 @@ $(document).ready(function () {
     }
   });
   $(document).ready(function(){
-    $('.phone__ru').mask('+7(000) 000-00-00');
+    $('.phone-ru').mask('+7(000) 000-00-00');
   });
   AOS.init();
 });

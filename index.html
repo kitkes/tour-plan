@@ -240,11 +240,11 @@
           <!-- /.hotel-slider -->
           <div class="hotel-person-map">
             <div class="booking">
-              <div class="booking-price--person">
-                <div class="booking-price">
-                  <span class="booking-price__starts">price starts as</span>
-                  <strong class="booking-price__value">$ 8,500</strong>
-                  <span class="booking-price__per-room">per room / night</span>
+              <div class="booking__price__person">
+                <div class="booking__price">
+                  <span class="booking__price__starts">price starts as</span>
+                  <strong class="booking__price__value">$ 8,500</strong>
+                  <span class="booking__price__per-room">per room / night</span>
                 </div>
                 <!-- /.booking-price -->
                 <div class="booking-person">
@@ -293,7 +293,6 @@
         <!-- /.hotel-network -->
       </div>
       <!-- /.container -->
-
       <section class="other-packages">
         <div class="container">
           <h2 class="other-packages-title">Other Packages</h2>
@@ -614,7 +613,6 @@
               class="newsletter-wrapper__send__input"
               placeholder="Your email address"
               name="email"
-              email="true"
               required
             />
             <button class="newsletter-wrapper__send__button">Send</button>
@@ -814,11 +812,9 @@
       <footer class="footer">
         <div class="container">
           <div class="footer-wrapper">
-            <img
-              src="img/vertical-logo.svg"
-              alt="Image: logo"
-              class="footer__logo"
-            />
+            <a href="#" class="footer__logo"
+              ><img src="img/vertical-logo.svg" alt="Image: logo"
+            /></a>
             <div class="footer__list categories">
               <h3 class="footer__title">ALL CATEGORIES</h3>
               <ul class="footer__stack">
@@ -935,11 +931,28 @@
                       class="footer__icon"
                     />
                   </div>
-                  Tel (business hours) : 269 1500<br />
-                  Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                  pm)<br />
-                  Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                  <div class="footer__item__text">
+                    Tel (business hours) :
+                    <a href="tel:269-1500" class="footer__item__tel"
+                      >269 1500</a
+                    >
+                    <p>
+                      Tel (hotline) Monday - Saturday:
+                      <a href="tel:52-56-61-38" class="footer__item__tel"
+                        >52-56-61-38</a
+                      >
+                      (08:00 am – 20:00 pm)
+                    </p>
+                    <p>
+                      Tel (hotline) Sunday:
+                      <a href="tel:52-56-61-38" class="footer__item__tel">
+                        52-56-61-38</a
+                      >
+                      (08:00 am – 14:00 pm)
+                    </p>
+                  </div>
                 </li>
+
                 <li class="footer__item footer__item__mb20">
                   <div class="footer__icon-wrapper">
                     <img
@@ -948,7 +961,11 @@
                       class="footer__icon"
                     />
                   </div>
-                  cherly.lawson@example.com
+                  <a
+                    href="mailto:cherly.lawson@example.com"
+                    class="footer__item__mail"
+                    >cherly.lawson@example.com</a
+                  >
                 </li>
               </ul>
             </div>
@@ -969,11 +986,10 @@
                 <div class="footer__input-group">
                   <input
                     type="text"
-                    class="footer__input footer__input__phone phone__ru"
+                    class="footer__input footer__input__phone phone-ru"
                     placeholder="Phone Number*"
                     name="phone"
                     required
-                    phone="true"
                   />
                 </div>
                 <textarea
@@ -1031,11 +1047,10 @@
             required
           />
           <input
-            type="phone"
-            class="modal__input modal__input__phone phone__ru"
+            type="tel"
+            class="modal__input modal__input__phone phone-ru"
             placeholder="Phone Number*"
             name="modal__phone"
-            phone="true"
             required
           />
           <input
@@ -1043,7 +1058,6 @@
             class="modal__input modal__input__email"
             placeholder="Email*"
             name="modal__email"
-            email="true"
             required
           />
           <textarea
@@ -1051,7 +1065,7 @@
             rows="10"
             class="modal__area"
             placeholder="Message"
-            name="message"
+            name="modal__message"
           ></textarea>
           <button class="modal__button">Send</button>
           <span class="modal__field">* Required Fields</span>

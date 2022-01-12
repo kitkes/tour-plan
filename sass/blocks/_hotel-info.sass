@@ -31,7 +31,7 @@
   &__service
     font-size: 14px
     line-height: 15px
-    margin-top: 2px 
+    margin-top: 2px
   &__rating
     display: flex
     flex-wrap: wrap
@@ -80,7 +80,7 @@
     height: 30px
     top: 50%
     transform: translateY(-50%)
-    z-index: 15 
+    z-index: 15
     cursor: pointer
     border: none
     &__next
@@ -108,10 +108,11 @@
   padding: 28px
   border-radius: 8px
   margin-bottom: 18px
-  &-price--person
-    display: flex
-    justify-content: space-between
-  &-price
+  &__price
+    &__person
+      display: flex
+      justify-content: space-between
+  &__price
     display: flex
     flex-direction: column
     margin-bottom: 9px
@@ -175,16 +176,17 @@
     background-color: $primary
     border: none
     cursor: pointer
+    overflow-y: auto
+    overflow-x: auto
+    &:hover
+      background-color: #fff
+      color: $text-color
+      transition: 0.3s
 .hotel-map
   width: 350px
-  height: 223px 
+  height: 223px
   border-radius: 10px
   overflow: hidden
 .hotel-person-map
   max-width: 100%
   margin: 0
-
-  
-
-
-    
