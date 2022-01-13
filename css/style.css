@@ -2686,6 +2686,12 @@ img {
   .details {
     max-width: 435px;
   }
+  .footer__social-network__title__inline {
+    margin-right: 43px;
+  }
+  .social {
+    max-width: 280px;
+  }
 }
 
 @media (max-width: 576px) {
